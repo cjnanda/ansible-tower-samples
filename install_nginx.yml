@@ -2,7 +2,7 @@
   hosts: all
   tasks:
    - name: Install Nginx
-     apt: pkg=nginx state=installed update_cache=true
+     apt: pkg=nginx state=installed update_cache=false
      notify:
       - Start Nginx
 
