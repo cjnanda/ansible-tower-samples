@@ -1,10 +1,10 @@
 - name: Install and Setup nginx
   hosts: all
   tasks:
-	- name: Install Nginx
-     	apt: pkg=nginx state=installed update_cache=true
-     	notify:
-      	- Start Nginx
+   - name: Install Nginx
+     apt: pkg=nginx state=installed update_cache=true
+     notify:
+      - Start Nginx
 
  handlers:
    - name: Start Nginx
