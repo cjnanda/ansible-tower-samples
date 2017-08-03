@@ -1,9 +1,6 @@
 - name: Install and Setup nginx
   hosts: all
   tasks:
-   - name: Install Python
-     apt: pkg=python state=installed update_cache=true
-
    - name: Install Nginx
      apt: pkg=nginx state=installed update_cache=true
      notify:
